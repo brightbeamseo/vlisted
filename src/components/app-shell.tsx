@@ -24,20 +24,20 @@ export function AppShell({ businesses }: AppShellProps) {
   );
 
   return (
-    <div className="flex h-screen flex-col bg-zinc-50">
-      <header className="flex shrink-0 items-center justify-between border-b border-zinc-200 bg-white px-4 py-3">
+    <div className="flex h-screen flex-col bg-white">
+      <header className="flex shrink-0 items-center justify-between border-b border-neutral-200 bg-khakki-950 px-4 py-3">
         <div className="flex items-center gap-2.5">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-khakki-600 text-white">
             <Building2 className="h-4 w-4" />
           </div>
           <div>
-            <p className="text-sm font-bold text-zinc-900">Vlisted</p>
-            <p className="text-xs text-zinc-500">Business valuations</p>
+            <p className="text-sm font-semibold tracking-tight text-white">Khakki</p>
+            <p className="text-xs text-neutral-400">Business valuations</p>
           </div>
         </div>
         <button
           onClick={() => signOut({ callbackUrl: "/login" })}
-          className="flex items-center gap-1.5 rounded-lg border border-zinc-200 px-3 py-1.5 text-xs font-medium text-zinc-600 transition hover:bg-zinc-50"
+          className="flex items-center gap-1.5 rounded-lg border border-neutral-700 px-3 py-1.5 text-xs font-medium text-neutral-300 transition hover:bg-khakki-900"
         >
           <LogOut className="h-3.5 w-3.5" />
           Sign out
@@ -45,19 +45,19 @@ export function AppShell({ businesses }: AppShellProps) {
       </header>
 
       <div className="flex min-h-0 flex-1">
-        <aside className="flex w-80 shrink-0 flex-col border-r border-zinc-200 bg-white">
-          <div className="border-b border-zinc-200 p-4">
+        <aside className="flex w-80 shrink-0 flex-col border-r border-neutral-200 bg-white">
+          <div className="border-b border-neutral-200 p-4">
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
+              <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-neutral-400" />
               <input
                 type="search"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search businesses..."
-                className="w-full rounded-lg border border-zinc-200 bg-zinc-50 py-2 pl-9 pr-3 text-sm outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
+                className="w-full rounded-lg border border-neutral-200 bg-white py-2 pl-9 pr-3 text-sm text-khakki-950 outline-none focus:border-khakki-600 focus:ring-2 focus:ring-khakki-600/20"
               />
             </div>
-            <p className="mt-2 text-xs text-zinc-500">
+            <p className="mt-2 text-xs text-neutral-500">
               {filtered.length} business{filtered.length !== 1 ? "es" : ""}{" "}
               listed
             </p>
@@ -68,17 +68,19 @@ export function AppShell({ businesses }: AppShellProps) {
               <li key={business.id}>
                 <button
                   onClick={() => setSelected(business)}
-                  className={`w-full border-b border-zinc-100 px-4 py-3 text-left transition hover:bg-zinc-50 ${
-                    selected?.id === business.id ? "bg-emerald-50" : ""
+                  className={`w-full border-b border-neutral-100 px-4 py-3 text-left transition hover:bg-khakki-50 ${
+                    selected?.id === business.id
+                      ? "border-l-2 border-l-khakki-600 bg-khakki-50"
+                      : "border-l-2 border-l-transparent"
                   }`}
                 >
-                  <p className="text-sm font-semibold text-zinc-900">
+                  <p className="text-lg font-semibold leading-snug text-khakki-950">
                     {business.name}
                   </p>
-                  <p className="text-xs text-zinc-500">
+                  <p className="text-xs text-neutral-500">
                     {business.category} · {business.city}, {business.state}
                   </p>
-                  <p className="mt-1 text-xs font-bold text-emerald-700">
+                  <p className="mt-1 text-xs font-bold text-khakki-600">
                     Vestimate {formatCurrency(business.vestimate)}
                   </p>
                 </button>
@@ -95,7 +97,7 @@ export function AppShell({ businesses }: AppShellProps) {
           />
         </main>
 
-        <aside className="w-96 shrink-0 border-l border-zinc-200 bg-white">
+        <aside className="w-[28rem] shrink-0 border-l border-neutral-200 bg-white">
           <BusinessPanel business={selected} />
         </aside>
       </div>

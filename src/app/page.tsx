@@ -1,8 +1,6 @@
 import { AppShell } from "@/components/app-shell";
-import { getBusinesses } from "@/lib/businesses";
+import { businesses } from "@/lib/businesses";
 
-export default async function HomePage() {
-  const businesses = await getBusinesses();
-
+export default function HomePage() {
   return <AppShell businesses={businesses} />;
 }

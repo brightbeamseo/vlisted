@@ -1,8 +1,6 @@
-import { client } from "@/sanity/client";
-import { BUSINESSES_QUERY } from "@/sanity/queries";
 import type { Business } from "./types";
 
-export const fallbackBusinesses: Business[] = [
+export const businesses: Business[] = [
   {
     id: "1",
     name: "Harbor Roast Coffee",
@@ -106,64 +104,6 @@ export const fallbackBusinesses: Business[] = [
       "Pet supply and grooming retailer serving year-round residents and tourists.",
   },
 ];
-
-type SanityBusiness = {
-  _id: string;
-  name: string;
-  category: string;
-  address: string;
-  city: string;
-  state: string;
-  lat: number;
-  lng: number;
-  vestimate: number;
-  annualRevenue: number;
-  employees: number;
-  founded: number;
-  sqft: number;
-  description: string;
-};
-
-function mapBusiness(doc: SanityBusiness): Business {
-  return {
-    id: doc._id,
-    name: doc.name,
-    category: doc.category,
-    address: doc.address,
-    city: doc.city,
-    state: doc.state,
-    lat: doc.lat,
-    lng: doc.lng,
-    vestimate: doc.vestimate,
-    annualRevenue: doc.annualRevenue,
-    employees: doc.employees,
-    founded: doc.founded,
-    sqft: doc.sqft,
-    description: doc.description,
-  };
-}
-
-export async function getBusinesses(): Promise<Business[]> {
-  if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
-    return fallbackBusinesses;
-  }
-
-  try {
-    const docs = await client.fetch<SanityBusiness[]>(
-      BUSINESSES_QUERY,
-      {},
-      { next: { revalidate: 60, tags: ["business"] } },
-    );
-
-    if (!docs?.length) {
-      return fallbackBusinesses;
-    }
-
-    return docs.map(mapBusiness);
-  } catch {
-    return fallbackBusinesses;
-  }
-}
 
 export function formatCurrency(value: number): string {
   return new Intl.NumberFormat("en-US", {

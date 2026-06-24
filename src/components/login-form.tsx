@@ -34,28 +34,28 @@ export function LoginForm() {
   return (
     <div className="w-full max-w-md">
       <div className="mb-8 text-center">
-        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-600 text-white shadow-lg shadow-emerald-600/30">
+        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-khakki-600 text-white shadow-md">
           <Building2 className="h-7 w-7" />
         </div>
-        <h1 className="text-3xl font-bold tracking-tight text-zinc-900">
-          Vlisted
+        <h1 className="text-2xl font-semibold tracking-tight text-khakki-950">
+          Khakki
         </h1>
-        <p className="mt-2 text-sm text-zinc-500">
+        <p className="mt-2 text-sm text-neutral-500">
           Business valuations on the map
         </p>
       </div>
 
       <form
         onSubmit={handleSubmit}
-        className="rounded-2xl border border-zinc-200 bg-white p-8 shadow-xl shadow-zinc-200/50"
+        className="rounded-2xl border border-neutral-200 bg-white p-8 shadow-lg shadow-neutral-200/80"
       >
-        <h2 className="mb-6 text-lg font-semibold text-zinc-900">Sign in</h2>
+        <h2 className="mb-6 text-lg font-semibold text-khakki-950">Sign in</h2>
 
         <div className="space-y-4">
           <div>
             <label
               htmlFor="email"
-              className="mb-1.5 block text-sm font-medium text-zinc-700"
+              className="mb-1.5 block text-sm font-medium text-neutral-700"
             >
               Email
             </label>
@@ -66,7 +66,7 @@ export function LoginForm() {
               onChange={(e) => setEmail(e.target.value)}
               required
               autoComplete="email"
-              className="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
+              className="w-full rounded-lg border border-neutral-300 bg-white px-3.5 py-2.5 text-sm text-khakki-950 outline-none transition focus:border-khakki-600 focus:ring-2 focus:ring-khakki-600/20"
               placeholder="you@company.com"
             />
           </div>
@@ -74,7 +74,7 @@ export function LoginForm() {
           <div>
             <label
               htmlFor="password"
-              className="mb-1.5 block text-sm font-medium text-zinc-700"
+              className="mb-1.5 block text-sm font-medium text-neutral-700"
             >
               Password
             </label>
@@ -85,7 +85,7 @@ export function LoginForm() {
               onChange={(e) => setPassword(e.target.value)}
               required
               autoComplete="current-password"
-              className="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
+              className="w-full rounded-lg border border-neutral-300 bg-white px-3.5 py-2.5 text-sm text-khakki-950 outline-none transition focus:border-khakki-600 focus:ring-2 focus:ring-khakki-600/20"
               placeholder="••••••••"
             />
           </div>
@@ -100,7 +100,7 @@ export function LoginForm() {
         <button
           type="submit"
           disabled={loading}
-          className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60"
+          className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-khakki-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-khakki-700 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {loading ? (
             <>
@@ -108,7 +108,7 @@ export function LoginForm() {
               Signing in...
             </>
           ) : (
-            "Continue to Vlisted"
+            "Continue to Khakki"
           )}
         </button>
       </form>

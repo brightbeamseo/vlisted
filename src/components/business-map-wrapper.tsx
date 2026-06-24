@@ -9,7 +9,7 @@ const BusinessMap = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="flex h-full items-center justify-center bg-zinc-100 text-sm text-zinc-500">
+      <div className="flex h-full items-center justify-center bg-neutral-50 text-sm text-neutral-500">
         Loading map...
       </div>
     ),

@@ -1,23 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #18181b;
+  --background: #ffffff;
+  --foreground: #0a0a0a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sora), ui-sans-serif, sans-serif;
+  --font-serif: var(--font-sora), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-sora), ui-sans-serif, sans-serif;
+  --default-font-family: var(--font-sora), ui-sans-serif, sans-serif;
+
+  --color-khakki-50: #faf8f6;
+  --color-khakki-100: #f5f0eb;
+  --color-khakki-200: #e8ddd3;
+  --color-khakki-300: #d4c4b5;
+  --color-khakki-400: #a68b72;
+  --color-khakki-500: #8b6f56;
+  --color-khakki-600: #6f5642;
+  --color-khakki-700: #574233;
+  --color-khakki-800: #1a1a1a;
+  --color-khakki-900: #0a0a0a;
+  --color-khakki-950: #000000;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+html,
+body,
+input,
+button,
+select,
+textarea {
+  font-family: var(--font-sora), ui-sans-serif, sans-serif;
 }
 
-.leaflet-container {
-  font-family: inherit;
+.leaflet-container,
+.leaflet-container a,
+.leaflet-container .leaflet-popup-content,
+.leaflet-container .leaflet-popup-content-wrapper,
+.leaflet-container .leaflet-control,
+.leaflet-container .leaflet-bar a {
+  font-family: var(--font-sora), ui-sans-serif, sans-serif !important;
 }
