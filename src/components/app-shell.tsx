@@ -3,12 +3,16 @@
 import { useState } from "react";
 import { signOut } from "next-auth/react";
 import { Building2, LogOut, Search } from "lucide-react";
-import { businesses, formatCurrency } from "@/lib/businesses";
+import { formatCurrency } from "@/lib/businesses";
 import type { Business } from "@/lib/types";
 import { BusinessMapWrapper } from "@/components/business-map-wrapper";
 import { BusinessPanel } from "@/components/business-panel";
 
-export function AppShell() {
+type AppShellProps = {
+  businesses: Business[];
+};
+
+export function AppShell({ businesses }: AppShellProps) {
   const [selected, setSelected] = useState<Business | null>(null);
   const [search, setSearch] = useState("");
 

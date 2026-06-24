@@ -31,6 +31,13 @@ Open [http://localhost:3000](http://localhost:3000). You'll be redirected to `/l
 | `AUTH_SECRET` | Secret for Auth.js sessions. Generate with `openssl rand -base64 32` |
 | `AUTH_EMAIL` | Login email |
 | `AUTH_PASSWORD` | Login password |
+| `NEXT_PUBLIC_SANITY_PROJECT_ID` | Sanity project ID |
+| `NEXT_PUBLIC_SANITY_DATASET` | Sanity dataset (default: `production`) |
+| `SANITY_API_READ_TOKEN` | Sanity read token for server-side fetching |
+
+## Content (Sanity CMS)
+
+Business listings are managed in [Sanity](https://www.sanity.io/manage) project **Vlisted** (`jt8wzqst`). The app fetches published `business` documents and falls back to local sample data if Sanity is unavailable.
 
 ## Deploy on Vercel
 
