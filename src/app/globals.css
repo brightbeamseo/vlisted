@@ -13,17 +13,17 @@
   --font-mono: var(--font-sora), ui-sans-serif, sans-serif;
   --default-font-family: var(--font-sora), ui-sans-serif, sans-serif;
 
-  --color-khakki-50: #faf8f6;
-  --color-khakki-100: #f5f0eb;
-  --color-khakki-200: #e8ddd3;
-  --color-khakki-300: #d4c4b5;
-  --color-khakki-400: #a68b72;
-  --color-khakki-500: #8b6f56;
-  --color-khakki-600: #6f5642;
-  --color-khakki-700: #574233;
-  --color-khakki-800: #1a1a1a;
-  --color-khakki-900: #0a0a0a;
-  --color-khakki-950: #000000;
+  --color-zivvn-50: #faf8f6;
+  --color-zivvn-100: #f5f0eb;
+  --color-zivvn-200: #e8ddd3;
+  --color-zivvn-300: #d4c4b5;
+  --color-zivvn-400: #a68b72;
+  --color-zivvn-500: #8b6f56;
+  --color-zivvn-600: #6f5642;
+  --color-zivvn-700: #574233;
+  --color-zivvn-800: #1a1a1a;
+  --color-zivvn-900: #0a0a0a;
+  --color-zivvn-950: #000000;
 }
 
 html,

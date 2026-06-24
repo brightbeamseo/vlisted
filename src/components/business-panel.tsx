@@ -20,7 +20,7 @@ export function BusinessPanel({ business }: BusinessPanelProps) {
         <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-neutral-100">
           <MapPin className="h-5 w-5 text-neutral-400" />
         </div>
-        <p className="text-sm font-medium text-khakki-950">
+        <p className="text-sm font-medium text-zivvn-950">
           Select a business on the map
         </p>
         <p className="mt-1 max-w-xs text-xs text-neutral-500">
@@ -57,25 +57,25 @@ export function BusinessPanel({ business }: BusinessPanelProps) {
   return (
     <div className="flex h-full flex-col overflow-hidden">
       <div className="border-b border-neutral-200 p-5">
-        <div className="mb-1 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-khakki-600">
+        <div className="mb-1 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-zivvn-600">
           <Building2 className="h-3.5 w-3.5" />
           {business.category}
         </div>
-        <h2 className="business-name text-khakki-950">{business.name}</h2>
+        <h2 className="business-name text-zivvn-950">{business.name}</h2>
         <p className="mt-1 flex items-center gap-1 text-sm text-neutral-500">
           <MapPin className="h-3.5 w-3.5 shrink-0" />
           {business.address}, {business.city}, {business.state}
         </p>
       </div>
 
-      <div className="border-b border-khakki-700 bg-khakki-600 p-5">
-        <p className="text-xs font-semibold uppercase tracking-wide text-khakki-100">
+      <div className="border-b border-zivvn-700 bg-zivvn-600 p-5">
+        <p className="text-xs font-semibold uppercase tracking-wide text-zivvn-100">
           Vestimate
         </p>
         <p className="mt-1 text-2xl font-semibold tracking-tight text-white">
           {formatCurrency(business.vestimate)}
         </p>
-        <p className="mt-1 text-xs text-khakki-100/80">
+        <p className="mt-1 text-xs text-zivvn-100/80">
           Estimated business valuation based on revenue, location, and market
           data.
         </p>
@@ -91,13 +91,13 @@ export function BusinessPanel({ business }: BusinessPanelProps) {
               <Icon className="h-3 w-3" />
               {label}
             </div>
-            <p className="text-sm font-semibold text-khakki-950">{value}</p>
+            <p className="text-sm font-semibold text-zivvn-950">{value}</p>
           </div>
         ))}
       </div>
 
       <div className="flex-1 overflow-y-auto p-5">
-        <h3 className="mb-2 text-sm font-semibold text-khakki-950">About</h3>
+        <h3 className="mb-2 text-sm font-semibold text-zivvn-950">About</h3>
         <p className="text-sm leading-relaxed text-neutral-600">
           {business.description}
         </p>

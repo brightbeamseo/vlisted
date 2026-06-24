@@ -88,9 +88,9 @@ export function BusinessMap({
         >
           <Popup>
             <div className="min-w-[160px]">
-              <p className="business-name-list text-khakki-950">{business.name}</p>
+              <p className="business-name-list text-zivvn-950">{business.name}</p>
               <p className="text-xs text-neutral-500">{business.category}</p>
-              <p className="mt-1 text-sm font-bold text-khakki-600">
+              <p className="mt-1 text-sm font-bold text-zivvn-600">
                 Vestimate: {formatCurrency(business.vestimate)}
               </p>
             </div>

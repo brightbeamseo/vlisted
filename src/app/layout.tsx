@@ -10,7 +10,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Khakki — Business Valuations on the Map",
+  title: "Zivvn — Business Valuations on the Map",
   description:
     "Discover businesses, explore locations on a map, and view Vestimate valuations.",
 };
