@@ -1,4 +1,4 @@
-# Zivvn
+# Vezzt
 
 A business listing and valuation tool — like Zillow, but for businesses. Browse listings on a map, view business details, and see each business's **Vestimate** (valuation estimate).
 
