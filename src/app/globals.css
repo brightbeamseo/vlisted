@@ -43,3 +43,16 @@ textarea {
 .leaflet-container .leaflet-bar a {
   font-family: var(--font-sora), ui-sans-serif, sans-serif !important;
 }
+
+.business-name {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.business-name-list {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+}

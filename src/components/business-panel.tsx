@@ -61,9 +61,7 @@ export function BusinessPanel({ business }: BusinessPanelProps) {
           <Building2 className="h-3.5 w-3.5" />
           {business.category}
         </div>
-        <h2 className="text-4xl font-bold leading-tight text-khakki-950">
-          {business.name}
-        </h2>
+        <h2 className="business-name text-khakki-950">{business.name}</h2>
         <p className="mt-1 flex items-center gap-1 text-sm text-neutral-500">
           <MapPin className="h-3.5 w-3.5 shrink-0" />
           {business.address}, {business.city}, {business.state}
@@ -74,7 +72,7 @@ export function BusinessPanel({ business }: BusinessPanelProps) {
         <p className="text-xs font-semibold uppercase tracking-wide text-khakki-100">
           Vestimate
         </p>
-        <p className="mt-1 text-3xl font-semibold tracking-tight text-white">
+        <p className="mt-1 text-2xl font-semibold tracking-tight text-white">
           {formatCurrency(business.vestimate)}
         </p>
         <p className="mt-1 text-xs text-khakki-100/80">

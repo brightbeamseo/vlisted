@@ -74,7 +74,7 @@ export function AppShell({ businesses }: AppShellProps) {
                       : "border-l-2 border-l-transparent"
                   }`}
                 >
-                  <p className="text-lg font-semibold leading-snug text-khakki-950">
+                  <p className="business-name-list text-khakki-950">
                     {business.name}
                   </p>
                   <p className="text-xs text-neutral-500">
