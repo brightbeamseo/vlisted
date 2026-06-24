@@ -32,12 +32,12 @@ export function AppShell({ businesses }: AppShellProps) {
           </div>
           <div>
             <p className="text-sm font-semibold tracking-tight text-white">Zivvn</p>
-            <p className="text-xs text-neutral-400">Business valuations</p>
+            <p className="text-xs text-zivvn-300">Business valuations</p>
           </div>
         </div>
         <button
           onClick={() => signOut({ callbackUrl: "/login" })}
-          className="flex items-center gap-1.5 rounded-lg border border-neutral-700 px-3 py-1.5 text-xs font-medium text-neutral-300 transition hover:bg-zivvn-900"
+          className="flex items-center gap-1.5 rounded-lg border border-zivvn-700 px-3 py-1.5 text-xs font-medium text-zivvn-200 transition hover:bg-zivvn-900"
         >
           <LogOut className="h-3.5 w-3.5" />
           Sign out

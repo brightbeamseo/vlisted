@@ -37,7 +37,7 @@ export function LoginForm() {
         <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-zivvn-600 text-white shadow-md">
           <Building2 className="h-7 w-7" />
         </div>
-        <h1 className="text-2xl font-semibold tracking-tight text-zivvn-950">
+        <h1 className="text-2xl font-semibold tracking-tight text-zivvn-900">
           Zivvn
         </h1>
         <p className="mt-2 text-sm text-neutral-500">
