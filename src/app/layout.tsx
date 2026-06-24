@@ -10,7 +10,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Vezzt — Business Valuations on the Map",
+  title: "Vezzt — Because your business has value.",
   description:
     "Discover businesses, explore locations on a map, and view Vestimate valuations.",
 };

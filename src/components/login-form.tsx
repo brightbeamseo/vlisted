@@ -41,7 +41,7 @@ export function LoginForm() {
           Vezzt
         </h1>
         <p className="mt-2 text-sm text-neutral-500">
-          Business valuations on the map
+          Because your business has value.
         </p>
       </div>
 

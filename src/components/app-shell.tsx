@@ -32,7 +32,7 @@ export function AppShell({ businesses }: AppShellProps) {
           </div>
           <div>
             <p className="text-sm font-semibold tracking-tight text-white">Vezzt</p>
-            <p className="text-xs text-vezzt-300">Business valuations</p>
+            <p className="text-xs text-vezzt-300">Because your business has value.</p>
           </div>
         </div>
         <button
